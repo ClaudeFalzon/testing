@@ -24,6 +24,12 @@ tr:nth-child(even) {
   background-color: rgb(240, 240, 240);
 }
 
-.pinkone:first-child {
-  color: blue;
-} 
+
+
+tbody tr:nth-child(3) td:not(:nth-child(2n+1)) {
+  background-color: pink;
+}
+
+tbody tr:nth-child(6) td:not(:nth-child(2n+1)) {
+  background-color: pink;
+}
