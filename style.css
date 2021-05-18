@@ -1,57 +1,29 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
+td, th {
 
-.best {
-  margin: 50px auto;
-  
-}
-.best, th, td {
-border-collapse: collapse;
-
+  padding: 5px 20px;
 }
 
-table {
-
- 
- box-shadow: 1px 1px 15px -2px rgb(165 165 165);
-  border-radius: 1em 1em 0 0;
-  overflow: hidden;
+th {
+background-color: gray;
+color: white;
 }
 
-th, td {
+tr:nth-child(odd) {
 
-  padding: 10px 30px;
+  background-color: rgb(214, 214, 214);
 }
 
-td[rowspan="2"] {
+tr:nth-child(even) {
 
-  background-color: #dbf1f1;
+  background-color: rgb(240, 240, 240);
 }
 
-th[colspan="2"] {
-
-  background-color: #0f97a6;
-  color: white;
-}
-
-.ps th {
-  background-color: #1e3859;
-  color: #6983a5;
-}
-
- tr:nth-of-type(odd) {
-  background-color: #dbf1f1;
-  color: darkgreen;
-}
-
- tr:nth-of-type(even) {
-  background-color: #d3d3d3;
-  color: darkgreen;
-}
-}
-
+.pinkone:first-child {
+  color: blue;
+} 
