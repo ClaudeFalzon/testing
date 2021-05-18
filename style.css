@@ -1,0 +1,57 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+.best {
+  margin: 50px auto;
+  
+}
+.best, th, td {
+border-collapse: collapse;
+
+}
+
+table {
+
+ 
+ box-shadow: 1px 1px 15px -2px rgb(165 165 165);
+  border-radius: 1em 1em 0 0;
+  overflow: hidden;
+}
+
+th, td {
+
+  padding: 10px 30px;
+}
+
+td[rowspan="2"] {
+
+  background-color: #dbf1f1;
+}
+
+th[colspan="2"] {
+
+  background-color: #0f97a6;
+  color: white;
+}
+
+.ps th {
+  background-color: #1e3859;
+  color: #6983a5;
+}
+
+ tr:nth-of-type(odd) {
+  background-color: #dbf1f1;
+  color: darkgreen;
+}
+
+ tr:nth-of-type(even) {
+  background-color: #d3d3d3;
+  color: darkgreen;
+}
+}
+
