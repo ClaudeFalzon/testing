@@ -1,12 +1,21 @@
-# Basic Data Exercises
+# UIB-mqueries-movie-site
 
-## Exercise: Table 4
+## Let's try to recreate this website
 
-**Instructions**:
+- You can choose whatever images/movie you want
 
-1.  Create a basic HTML page with all important elements.
-2.  Look at the mockup file and create the table shown using the `:first-child`, `:last-child`, `:nth-child` and `:not` pseudo classes.
-3.  Do NOT use deprecated HTML attributes. Style using CSS.
-4.  Used colors are; #c0c0c0, #888888, #efefef, #ffbbbb.
+- if you do this the same way I did you'll need to:
 
-![mockup-image](image/mockup.jpg)
+  - use positioning
+
+  - change display types
+
+- I used a pattern from here for the backgrounds: [Hero Patterns](https://www.heropatterns.com/)
+
+![Desktop](./design/desktop.PNG)
+
+![Tablet](./design/tablet.PNG)
+
+![Mobile](./design/mobile.PNG)
+
+![Animation](./design/Animation.gif)
