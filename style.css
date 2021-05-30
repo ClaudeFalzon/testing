@@ -15,7 +15,7 @@ li {
 }
 
 .top {
-  height: 15vh;
+  height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -23,10 +23,11 @@ li {
   color: white;
   font-size: 20px;
   position: fixed;
- top: 0;
+  top: 0;
   left: 0;
- z-index: 999;  
+  z-index: 999;
   width: 100%;
+  padding: 10px;
 
   background-color: #1b97f1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23120905' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -35,11 +36,10 @@ li {
 .cont_back {
   background: #f4f4f4;
   position: sticky;
-  top: 15vh;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
+  top: 20vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-
 
 h1 {
   border: 10px solid white;
@@ -49,25 +49,20 @@ h1 {
 
 img {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   object-fit: cover;
   display: block;
 }
 
 .notice {
- 
-  
   background-color: #1b98f1bb;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23120905' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   /* overflow: hidden; */
   position: absolute;
-  top: 18%;
+  top: 35%;
   left: 1%;
   padding: 4rem;
-  
 }
-
-
 
 a {
   text-decoration: none;
@@ -77,13 +72,12 @@ a {
 }
 
 a:hover {
-
   color: rgb(26, 26, 26);
-
-} 
+}
 .head_container .middle {
   position: relative;
-  top: 15vh;
+
+  padding-top: 15vh;
 }
 .notice h2 {
   font-size: 50px;
@@ -112,17 +106,16 @@ ul {
   height: 6vh;
 }
 
-
 ul li {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: #333;
 }
-.cont_back {
+/* .cont_back {
   overflow: hidden;
-}
-
+} 
+ */
 main section.sec_a {
   line-height: 1.5;
   margin-top: 40px;
@@ -149,11 +142,12 @@ main .images {
 .release {
   margin-top: 20px;
   background: #f4f4f4;
-  height: 30vh;
+  /*   height: 30vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .release h2 {
   font-size: 40px;
@@ -178,4 +172,118 @@ footer {
 footer p {
   padding: 20px;
   color: #fff;
+}
+
+/* Media Queries */
+
+@media (max-width: 1097px) {
+  .notice h2 {
+    font-size: 40px;
+  }
+
+  .notice h2 span {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 857px) {
+  .notice h2 {
+    font-size: 30px;
+  }
+
+  .notice h2 span {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 842px) {
+  .notice {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 35px;
+    border: 7px solid white;
+  }
+
+  .notice h2,
+  .notice .greater {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 740px) {
+  h1 {
+    border: 7px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 623px) {
+  h1 {
+    border: 7px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  ul li a {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  main .images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 15px;
+  }
+
+  .release {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    border: 6px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+
+  .release h2 {
+    font-size: 30px;
+  }
+
+  label {
+    padding: 0 35px;
+  }
+
+  .release input {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+  }
 }
