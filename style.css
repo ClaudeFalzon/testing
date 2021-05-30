@@ -226,19 +226,21 @@ footer p {
 @media (max-width: 623px) {
 
 
-  h1 {
+/*   h1 {
     border: 3px solid white;
     padding: 10px 20px;
     border-radius: 50px;
     font-size: 30px;
-  }
+  } */
 
   ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    padding: 15px;
+   
+ /*    overflow: hidden; */
   }
 
   ul li a {
@@ -264,13 +266,13 @@ footer p {
 }
 
 @media (max-width: 375px) {
- h1 {
+/*  h1 {
     border: 3px solid white;
     padding: 5px 20px;
     border-radius: 50px;
     font-size: 15px;
   }
-
+ */
 
   .release h2 {
     font-size: 30px;
