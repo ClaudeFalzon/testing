@@ -4,290 +4,73 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
 body {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-li {
-  list-style-type: none;
-}
-
-.top {
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-  padding: 20px;
-  overflow: hidden;
-
-  background-color: #1b97f1;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23120905' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-}
-
-.cont_back {
-  background: #f4f4f4;
-  position: sticky;
-  top: 200px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-h1 {
-  border: 10px solid white;
-  padding: 10px 20px;
-  border-radius: 50px;
-}
-
-img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  display: block;
-}
-
-.notice {
-  background-color: #1b98f1bb;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23120905' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-  /* overflow: hidden;  */
-  position: absolute;
-  top: 35%;
-  left: 1%;
-  padding: 4rem;
+  font-family: 'Lato', sans-serif;
+  color: #333;
 }
 
 a {
   text-decoration: none;
-  color: rgb(97, 97, 97);
-  transition: color 1s;
-  font-weight: bold;
+  color: inherit;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 10px solid transparent;
+}
+
+.nav_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*  height: 10vh; */
 }
 
 a:hover {
-  color: rgb(26, 26, 26);
-}
-.head_container .middle {
-  position: relative;
-
-  padding-top: 200px; 
-}
-.notice h2 {
-  font-size: 50px;
-
-  color: rgb(255, 255, 255);
-  position: relative;
+  border-bottom: 10px solid blue;
 }
 
-.sec_a {
-  padding: 0 25px;
-}
-.notice h2 span {
-  font-size: 70px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-ul li {
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #333;
-}
+/* 
+a::after {
  
+  content: '';
+  
+  padding-top: 25px;
+  border-bottom: 10px blue solid;
+  width: 100%;
+  
+
  
-main section.sec_a {
-  line-height: 1.5;
-  margin-top: 40px;
 }
+ a:hover::after {
 
-main section.sec_a h2 {
-  font-size: 40px;
-  color: rgb(20, 20, 158);
-}
+display: block;
 
-main img {
-  width: 45%;
-  height: 300px;
-  object-fit: cover;
-  margin-top: 40px;
-}
+} */
 
-main .images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.release {
-  margin-top: 20px;
-  background: #f4f4f4;
-  /*   height: 30vh; */
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-.release h2 {
-  font-size: 40px;
-  padding: 20px;
+  height: 90vh;
+  background-color: rgb(238, 238, 238);
 }
 
-.release input {
-  margin-top: 35px;
-  padding: 10px;
-  border-radius: 20px;
-  outline: none;
-}
-
-footer {
-  background: rgb(20, 20, 158);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-footer p {
-  padding: 20px;
-  color: #fff;
-}
-
-/* Media Queries */
-
-@media (max-width: 1097px) {
-  .notice h2 {
-    font-size: 40px;
-  }
-
-  .notice h2 span {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 857px) {
-  .notice h2 {
-    font-size: 30px;
-  }
-
-  .notice h2 span {
-    font-size: 45px;
-  }
-}
-
-@media (max-width: 842px) {
-  .notice {
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  h1 {
-    font-size: 35px;
-    border: 7px solid white;
-  }
-
-  .notice h2,
-  .notice .greater {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 740px) {
-  h1 {
-    border: 7px solid white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 623px) {
-
-
-/*   h1 {
-    border: 3px solid white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 30px;
-  } */
-
-  ul {
+@media (max-width: 600px) {
+  .nav_items {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-   
- /*    overflow: hidden; */
+ 
   }
 
-  ul li a {
-    font-size: 16px;
-    padding: 20px;
-  }
-
-  main .images {
-    display: flex;
-    flex-direction: column;
-  }
-
-  main img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    margin-top: 15px;
-  }
-
-  .release {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 375px) {
-/*  h1 {
-    border: 3px solid white;
-    padding: 5px 20px;
-    border-radius: 50px;
-    font-size: 15px;
-  }
- */
-
-  .release h2 {
-    font-size: 30px;
-  }
-
-  label {
-    padding: 0 35px;
-  }
-
-  .release input {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    width: 60%;
+  a {
     padding: 10px;
-    border-radius: 20px;
-    outline: none;
+    border-bottom: 5px solid transparent;
+  }
+
+  a:hover {
+    border-bottom: 5px solid blue;
   }
 }
