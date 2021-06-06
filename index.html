@@ -4,78 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Cards</title>
+
+    <title>Body Flex</title>
   </head>
   <body>
-    <div class="container">
-      <div class="item item-1">
-        <div class="header">
-          <h1>Card Header 1</h1>
-          <img src="./images/noun_Sun Cross_98942.png" alt="" />
+    <nav id="main_nav">
+      <div class="container">
+        <div class="flex_nav">
+          <div class="logo">
+            <p>
+              <i class="fas fa-dumbbell"></i>
+              BODY<span class="flex_col">flex</span>
+            </p>
+          </div>
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a  href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
-
-        <img class="splash" src="./images/emily-machan-unsplash.jpeg" alt="" />
-
-        <div class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-          debitis nostrum impedit eligendi aliquid magni quaerat aperiam fuga
-          consequatur, tempora maxime repellat, quo at quis saepe nulla
-          voluptate ducimus. Quidem harum voluptas, nam tempore molestiae culpa.
-        </div>
-        <footer>Card Footer</footer>
       </div>
+    </nav>
 
-      <div class="item item-2">
-        <div class="header">
-          <h1>Card Header 1</h1>
-          <img src="./images/noun_Sun Cross_98942.png" alt="" />
+    <div id="showcase">
+      <div class="overlay">
+        <div class="container">
+          <div class="showcase_text">
+            <h1>The Perfect Body <span class="block"> Is Yours</span></h1>
+          </div>
         </div>
-
-        <img src="./images/emily-machan-unsplash.jpeg" alt="" />
-
-        <div class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-          debitis nostrum impedit eligendi aliquid magni quaerat aperiam fuga
-          consequatur, tempora maxime repellat, quo at quis saepe nulla
-          voluptate ducimus. Quidem harum voluptas, nam tempore molestiae culpa.
-        </div>
-        <footer>Card Footer</footer>
-      </div>
-
-      <div class="item item-3">
-        <div class="header">
-          <h1>Card Header 1</h1>
-          <img src="./images/noun_Sun Cross_98942.png" alt="" />
-        </div>
-<div class="big-image">
-        <img src="./images/emily-machan-unsplash.jpeg" alt="" />
-</div>
-        <div class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-          debitis nostrum impedit eligendi aliquid magni quaerat aperiam fuga
-          consequatur, tempora maxime repellat, quo at quis saepe nulla
-          voluptate ducimus. Quidem harum voluptas, nam tempore molestiae culpa.
-        </div>
-        <footer>Card Footer</footer>
-      </div>
-
-      <div class="item item-4">
-        <div class="header">
-          <h1>Card Header 1</h1>
-          <img src="./images/noun_Sun Cross_98942.png" alt="" />
-        </div>
-
-        <img src="./images/emily-machan-unsplash.jpeg" alt="" />
-
-        <div class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-          debitis nostrum impedit eligendi aliquid magni quaerat aperiam fuga
-          consequatur, tempora maxime repellat, quo at quis saepe nulla
-          voluptate ducimus. Quidem harum voluptas, nam tempore molestiae culpa.
-        </div>
-        <footer>Card Footer</footer>
       </div>
     </div>
+
+    <main class="container">
+      <div class="showcase-main py-1">
+        <div class="main-title">
+          <h2>Membership Solutions</h2>
+          <div class="bottom-line"></div>
+          <p>
+            Do you want a perfect body? Join us and we will show you how to get
+            what you and everyone wants in life.
+          </p>
+        </div>
+
+        <div class="flex-membership">
+          <div class="item">
+            <img src="./images/m7.jpg" alt="" />
+            <h3>Free</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+              nam eaque molestiae recusandae at perferendis.
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="./images/m1.jpg" alt="" />
+            <h3>Golden</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+              nam eaque molestiae recusandae at perferendis.
+            </p>
+          </div>
+
+          <div class="item">
+            <img src="./images/m3.jpg" alt="" />
+            <h3>Platinium</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+              nam eaque molestiae recusandae at perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+
+      <div>  Copyright &copy; BodyFlex 2021 </div>
+
+    </footer>
   </body>
 </html>
