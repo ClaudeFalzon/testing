@@ -1,460 +1,109 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: none;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.nav-bar {
+  display: flex;
+  height: 70px;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* li {
+  list-style: none;
+} */
+
+.main-list {
+  display: flex;
 }
 
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
-  color: inherit;
+  /* color: inherit; */
+  color: black;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.flex_nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px 20px;
-  align-items: center;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
-ul li a {
-  background-color: #333;
-  padding: 10px 20px;
-  text-align: center;
-  color: white;
-}
-
-.current {
-  background: rgb(145, 8, 196);
-}
-
-ul li a:hover {
-  background-color: rgb(175, 175, 175);
-
-  color: rgb(44, 44, 44);
-}
-
-#main_nav {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: #fff;
-}
-#main_nav .container .flex_nav .logo p {
-  font-size: 24px;
-  /* font-weight: lighter; */
-}
-
-#main_nav .container .flex_nav .logo span {
-  color: rgb(145, 8, 196);
-  font-weight: bold;
-}
-
-#main_nav .container .flex_nav .logo .fas {
-  background-color: rgb(145, 8, 196);
-  color: white;
-  padding: 10px;
-}
-
-img {
-  width: 100%;
-}
-
-#showcase {
-  background: url(./images/mainimg.jpg) no-repeat center center / cover;
-  width: 100%;
-  height: 100vh;
+.nav-bar ul li {
+  padding: 0.8rem;
   position: relative;
 }
 
-.showcase_text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: rgb(255, 255, 255);
-  font-size: 28px;
+/* Hide Nested Ul by default */
+
+.nav-bar ul li ul {
+  display: none;
 }
 
-.overlay {
-  background-color: rgba(64, 1, 182, 0.247);
-  position: absolute;
-  top: 0;
-  height: 0;
-  width: 100%;
-  height: 100%;
+/* #nav-bar ul li ul li ul li {
+  display: none;
 }
-
-.flex-membership {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  gap: 10px;
-  text-align: center;
-}
-.py-1 {
-  padding: 20px 0 30px 0;
-}
-
-.flex-membership .item {
-  width: 30%;
-}
-
-main img {
-  max-width: 100%;
-  height: 400px;
-  object-fit: cover;
-  filter: grayscale(90%);
-  transition: 0.2s ease-in;
-}
-
-main img:hover {
-  filter: grayscale(0%);
+ */
+.nav-bar ul li:hover {
   cursor: pointer;
+  /*  background: coral;
+    color: white; */
 }
 
-.container .flex-membership .item h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: rgb(238, 66, 102);
-  font-size: 18px;
-  text-transform: uppercase;
-}
+/* the drop down menus to be positioned as absolute within the top li as a container */
 
-.container .flex-membership .item p {
-  font-size: 14px;
-  padding: 5px 15px;
-}
+/* Nested Drops down Show */
 
-.container .main-title {
-  text-align: center;
-  padding: 20px;
-}
-
-.bottom-line {
-  width: 100px;
-  margin: 10px auto;
-  border: 1px solid rgb(238, 66, 102);
+.nav-bar ul li:hover ul {
   display: block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: aqua;
+  width: 150px;
+  margin-top: 1rem;
 }
 
-footer {
-  background-color: rgb(150, 34, 59);
 
-  text-align: center;
-  color: #fff;
-}
-
-footer div {
-  padding: 20px;
-  font-size: 14px;
-}
-
-/* Contact Form */
-
-.form_grid {
-  display: grid;
-  grid-template-areas:
-    'a b'
-    'c d'
-    'e e';
-}
-
-.First_Name {
-  grid-area: a;
-  font-family: 'Poppins', sans-serif;
-  color: blue;
-}
-
-.Second_Name {
-  grid-area: b;
-  font-family: 'Poppins', sans-serif;
-  color: blue;
-}
-
-.email {
-  grid-area: c;
-  font-family: 'Poppins', sans-serif;
-}
-
-.tel {
-  grid-area: d;
-  font-family: 'Poppins', sans-serif;
-}
-.form_text {
-  grid-area: e;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(104, 103, 103);
-}
-
-::placeholder {
-  color: rgb(104, 103, 103);
-}
-textarea {
-  height: 250px;
-  max-width: 1100px;
-}
-
-input,
-textarea {
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid gray;
-}
-
-form {
-  padding: 20px;
-}
-
-.main-title p,
-.main-title-contact p {
-  padding: 0 20px;
-}
-
-button {
-  border: none;
-  padding: 12px 15px;
-  width: 99%;
-  color: #fff;
-  margin: 10px auto;
-  font-size: 14px;
-  font-family: ;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  background-color: rgb(145, 8, 196);
-}
-
-button:hover {
-  color: #333;
-  background-color: rgb(228, 228, 228);
-  font-weight: bold;
-}
-
-.contact_showcase {
-  display: flex;
-  gap: 10px;
-  padding: 10px 20px 20px 20px;
-}
-
-.main-title-contact {
-  text-align: center;
-  margin: 50px 0 15px 0;
-}
-
-.contact-item {
-  background-color: #d1d1d1;
-  width: 25%;
-}
-.contact-item h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: rgb(238, 66, 102);
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.contact-item p {
-  font-size: 14px;
-  padding: 5px 15px 25px 15px;
-  text-align: center;
-}
-.contact-item img {
-  max-width: 100%;
-  height: 300px;
-  object-fit: cover;
-  filter: grayscale(70%);
-  transition: 0.2s ease-in;
-}
-
-.contact-item img:hover {
-  filter: grayscale(0%);
-  cursor: pointer;
-}
-
-/* Media Queries */
-
-@media (max-width: 1024px) {
-/*   .contact_showcase {
-    display: flex;
-    gap: 5px;
-    padding: 10px 5px 10px 5px;
-  } */
-
-
-  .contact_showcase {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-  }
-
-  .contact_showcase img {
-    height: 500px;
-  }
-
-  .contact-item {
-    width: 100%;
-  }
-
+/* 
+#nav-bar .sub1 {
+  position: relative;
 
 }
 
-@media (max-width: 768px) {
-  #showcase .overlay .showcase_text h1 {
-    font-size: 40px;
-  }
+#nav-bar .sub-sub1:hover ul {
+  position: absolute;
+  display: block;
+} */
 
-  #showcase {
-    height: 400px;
-  }
 
-  .showcase_text {
-    height: 400px;
-  }
-
-  .form_grid {
-    grid-template-areas:
-      'a'
-      'b'
-      'c'
-      'd'
-      'e';
-  }
-
-  .main-title-contact {
-    text-align: center;
-    margin: 25px 0 25px 0;
-  }
-
-  .main-title-contact p,
-  main .container .main-title p {
-    padding: 0 40px;
-  }
-
-  .contact_showcase {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-  }
-
-  .contact_showcase img {
-    height: 500px;
-  }
-
-  .contact-item {
-    width: 100%;
-  }
+.hover_me {
+  position: relative;
 }
 
-@media (max-width: 613px) {
-  .flex-membership {
-    display: flex;
-    flex-direction: column;
-  }
-  .flex-membership .item {
-    width: 100%;
-  }
-}
-
-@media (max-width: 550px) {
-  #main_nav .flex_nav {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 120px;
-  }
-
-  main img {
-
-    height: 300px;
-  }
+.sub_menu2 {
+  display: none;
   
-  ul li a {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
+}
 
-  #main_nav .container .flex_nav .logo p {
-    font-size: 20px;
-  }
-  #main_nav .container .flex_nav .logo .fas {
-    padding: 5px;
-  }
+.hover_me:hover .sub_menu2 {
+ display: block;
+  position: absolute;
+  left: 80%;
+  top: 0;
+    width: 150px;
+    background-color: red;
+    color: white;
+   /* color: white; */
+/*   margin-top: 1rem; */
 
-  #showcase .overlay .showcase_text h1 {
-    font-size: 25px;
-  }
+}
 
-  #showcase {
-    height: 300px;
-  }
-
-  .showcase_text {
-    height: 300px;
-  }
-
-  .block {
-    display: block;
-    text-align: center;
-  }
-  .main-title h2, .main-title-contact h2 {
-    font-size: 17px;
-  }
-
-  .main-title p, .main-title-contact p {
-    font-size: 15px;
-    padding: 0 30px;
-  }
-
-  .overlay {
-    background-color: rgba(64, 1, 182, 0.452);
-  }
-
-  .container .flex-membership .item h3 {
-    margin-top: 20px;
-  }
-  .container .flex-membership .item p {
-    font-size: 13px;
-    padding: 2px 30px 10px;
-    margin-bottom: 10px;
-  }
-
-  .py-1 {
-    padding: 0;
-  }
-
-  footer div {
-    padding: 10px;
-    font-size: 10px;
-  }
+.sub_menu2 ul {
+  background-color: red;
+  color: black;
+  border: 1px solid black;
 }
