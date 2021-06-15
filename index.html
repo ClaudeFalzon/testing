@@ -16,26 +16,156 @@
     <title>CSS Drop Down Menu</title>
   </head>
   <body>
-    <nav class="nav-bar">
+    <nav>
+      <img src="./images/logo.png" alt="logo" />
+      <ul>
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-user"></i>
+            About Me
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Experience</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Education</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-clone"></i>
+            Services
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Web Designing</a></li>
+              <li class="hover-me">
+                <a href="#">Marketing</a>
+                <i class="fas fa-angle-right"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">E-mail Marketing</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="hover-me">
+                <a href="#">Mobile App</a>
+                <i class="fas fa-angle-right"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">Android App</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Ionic App</a></li>
+                    <li><a href="#">Flutter App</a></li>
+                    <li><a href="#">Unity App</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-users"></i>
+            Clients
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-money-check-alt"></i>
+            Pricing
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-edit"></i>
+            Training
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <i class="fas fa-phone"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+      <section>
+
+    
+        <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            About Me
+          </a>
+        <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contact Me
+          </a> 
+           <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Explore
+          </a>
+            <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Events
+          </a>
+            <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Home
+          </a>
+    </section>
+
+
+
+    <!--    <nav class="nav-bar">
       <img src="./images/logo.png" alt="" />
       <ul class="main-list">
-        <li>
+        <li class="item">
           <i class="fas fa-home"></i>
           &nbsp;
           <a href="#">Home</a>
         </li>
-        <li>
+        <li class="item">
           <i class="fas fa-swimmer"></i>
           &nbsp;About Me
           <i class="fas fa-angle-down"></i>
-
+           
           <ul>
             <li><a href="#">Experience</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Education</a></li>
           </ul>
         </li>
-        <li>
+        <li class="item">
           <i class="fas fa-clone"></i>
           &nbsp;Services
           <i class="fas fa-angle-down"></i>
@@ -56,12 +186,12 @@
             <li><a href="#">Mobile App</a></li>
           </ul>
         </li>
-        <li>
+        <li class="item">
           <i class="fas fa-users"></i>
           &nbsp;
           <a href="#">Clients</a>
         </li>
-        <li>
+        <li class="item">
           <i class="fas fa-money-check-alt"></i>
           &nbsp;
           <a href="#">Pricing</a>
@@ -71,12 +201,12 @@
           &nbsp;
           <a href="#">Training</a>
         </li>
-        <li>
+        <li class="item">
           <i class="fas fa-phone-alt"></i>
           &nbsp;
           <a href="#">Contact</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
   </body>
 </html>
